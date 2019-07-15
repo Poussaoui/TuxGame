@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<tux:dico
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tux='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux file:/home/m/mushingd/IM2AG/LangagePourLeWeb/TUX/src/xml/dico.xsd'>
+    <tux:liste_mots>
+        <tux:mot level="1">mal</tux:mot>
+        <tux:mot level="1">tri</tux:mot>
+        <tux:mot level="2">parler</tux:mot>
+        <tux:mot level="2">manger</tux:mot>
+        <tux:mot level="3">descendre</tux:mot>
+        <tux:mot level="3">rabaisser</tux:mot>
+        <tux:mot level="4">augmentation</tux:mot>
+        <tux:mot level="4">observation</tux:mot>
+        <tux:mot level="5">passe-temps</tux:mot>
+        <tux:mot level="5">porte-monnaie</tux:mot>
+        <tux:mot level="5">tête-à-tête</tux:mot>
+    </tux:liste_mots>
+
+</tux:dico>

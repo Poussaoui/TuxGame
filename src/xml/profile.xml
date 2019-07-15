@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<tux:profile
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tux='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux file:/home/m/mushingd/IM2AG/LangagePourLeWeb/TUX/src/xml/profile.xsd'>
+    
+    <tux:name>Alban</tux:name>
+    <tux:avatar>image/tux.jpg</tux:avatar>
+    <tux:birthday>2006-05-08</tux:birthday> 
+    <tux:games>
+        <tux:game date="2013-12-10">
+            <tux:time>20</tux:time>
+            <tux:word level="1">cle</tux:word>
+        </tux:game>   
+        <tux:game date="2013-12-11" found="75">
+            <tux:word level="2">indice</tux:word>
+        </tux:game> 
+        <tux:game date="2013-12-11">
+            <tux:time>20</tux:time>
+            <tux:word level="2">indice</tux:word>
+        </tux:game>
+    </tux:games>
+    
+    
+    
+</tux:profile>

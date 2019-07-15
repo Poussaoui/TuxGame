@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<pr:profile
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:pr='http://ujf-grenoble.fr/profile'
+    xsi:schemaLocation='http://ujf-grenoble.fr/profile ../xslt/profile.xsd'>
+    <pr:name>nom</pr:name>
+    <pr:avatar>tux.jpg</pr:avatar>
+    <pr:birthday>2006-05-08</pr:birthday>
+    <pr:games>
+        <pr:game date="2013-12-10" found="100">
+            <pr:time>22</pr:time>
+            <pr:word level="1">cle</pr:word>
+        </pr:game>
+    </pr:games>
+
+</pr:profile>

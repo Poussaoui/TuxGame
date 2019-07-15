@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            targetNamespace="http://myGame/tux"
+            xmlns:tux ="http://myGame/tux"
+            elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="dico.xsd"/>
+    <!-- RACINE -->
+    <xsd:element name ="profile" type="tux:Profile"/>
+    
+    
+    <!-- Type .... -->
+    <xsd:complexType name="Profile">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string" />
+            <xsd:element name="avatar" type="xsd:string" />
+            <xsd:element name="birthday" type="xsd:date" />
+            <xsd:element name="games" type="tux:Games" />
+        </xsd:sequence>
+    </xsd:complexType> 
+    
+    
+    <xsd:complexType name="Games">
+        <xsd:sequence>
+            <xsd:element name="game" type="tux:Game" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType> 
+    
+    
+    <xsd:complexType name="Game">
+        <xsd:sequence>
+            <xsd:element name="time" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="word" type="tux:Word" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+        <xsd:attribute name="date" type="xsd:date" />
+        <xsd:attribute name="found">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                    <xsd:minInclusive value="0"/>
+                    <xsd:maxInclusive value="100"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType> 
+    
+    
+    <xsd:complexType name="Word">
+        <xsd:simpleContent>
+            <xsd:extension base="tux:RestrictedWord">
+                <xsd:attribute name="level" type="tux:Level" use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    
+  <xsd:simpleType name="RestrictedWord">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="([A-ZÀÂÊÏËÜÎÔÛÙÈÉÇa-zéèàâêïëüîôûùç]*'?\s?-?)+" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+    
+</xsd:schema>
